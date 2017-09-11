@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Ubuntu:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two');@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+$font-main: 'Merriweather', serif;
+$font-secondary: 'Ubuntu', sans-serif;
+$font-title: 'Lobster Two', 'cursive';
+$font-size: 16px;
+$font-color: #FFF;
+$first-color: #2279D7;
+$secondary-color: #25C9F1;
+$third-color: #D24F56;
+$fourth-color: #FA8086;
+$error-color: #E80808;
+$success-color: green;
+$alert-color: #E8E808;
+
+
+html {
+  font: {
+    family: $font-main;
+    size: $font-size;
+  }
+  color: $font-color;
+  background: linear-gradient(-45deg, $secondary-color,$first-color,
+  $secondary-color) no-repeat fixed;
+}
+
+a {
+  display: block;
+  font-size: 4vw;
+  color: $font-color;
+  transition: all .3s ease-out;
+
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+button {
+  border: 2px solid $font-color;
+  padding: .3em .5em;
+  font: {
+    size: 5vw;
+    family: $font-secondary;
+    weight: 700;
+  }
+  cursor: pointer;
+  background: transparent;
+  color: $font-color;
+
+  @media screen and (min-width: 64em) {
+    font-size: 2rem;
+  }
+
+  & > *  {
+    display: block;
+  }
+}
+
+img, video {
+  margin: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.sign-button {
+  transition: all .3s ease-out;
+  background-color: rgba(black, .1);
+  &:hover {
+    background: $third-color;
+  }
+}

@@ -1,0 +1,22 @@
+.progress {
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 0 0 rgba(black, .3);
+
+  &-bar {
+    width: 60%;
+    margin-bottom: .3em;
+    background: pink;
+  }
+
+  &-advance {
+    font: {
+      size: 2rem;
+      family: $font-secondary;
+      weight: bold;
+    }
+  }
+}

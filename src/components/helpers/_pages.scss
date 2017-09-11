@@ -1,0 +1,256 @@
+.POLIgram {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.sign {
+  text-align: center;
+
+  &-title {
+    width: 100%;
+    height: 20vh;
+    font-weight: bold;
+    text-indent: -9999px;
+    background: {
+      image: url('./assets/img/edgram-icon.png');
+      size: contain;
+      repeat: no-repeat;
+      position: center;
+    }
+  }
+
+  &-retitle {
+    font: {
+      family: $font-title;
+      size: 4.5em;
+    }
+    margin-top: -.3em;
+    text-shadow: 2px 0 0 $third-color;
+    margin-bottom: .7em;
+  }
+}
+
+.header {
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: .1px solid rgba(#000, .4);
+
+  &-logo {
+    width: 10%;
+    height: 100%;
+    font-weight: bold;
+    text-indent: -9999px;
+    background: {
+      image: url('./assets/img/edgram-icon-black.png');
+      size: contain;
+      repeat: no-repeat;
+      position: left;
+    }
+  }
+
+  &-title {
+    padding: 0;
+    color: rgba(#000, .8);
+    height: 100%;
+    text-align: center;
+    font: {
+      family: $font-title;
+      size: 1.3em;
+    }
+
+  }
+
+  .logout {
+    width: 10%;
+    height: 100%;
+    font-weight: bold;
+    position: relative;
+    color: rgba(black, .8);
+    i {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      font-size: 1em;
+    }
+  }
+}
+
+.content {
+  padding: 3rem 0 1rem;
+
+  &-section {
+    width: 100%;
+    min-height: 100vh;
+  }
+}
+
+.footer {
+  bottom: 0;
+  color: black;
+  border-top: .1px solid rgba(#000, .4);
+}
+
+[class$="-menu"] {
+  height: 2.3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+
+  .fa {
+    color: rgba(black, .8);
+    border: none;
+    font-size: 1.2em;
+    display: flex;
+    align-content: center;
+  }
+
+  .u-disabled {
+    pointer-events: none;
+    & i {
+      color: rgba(black, .5);
+    }
+  }
+}
+
+.uploader {
+  margin: 3rem 0;
+  & input[type="file"] {
+    display: none;
+  }
+
+  & label {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  &-title {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    text-shadow: 2px 0 0 $first-color;
+  }
+}
+
+.profile {
+  margin: auto;
+  text-align: center;
+
+  & > * {
+    margin: 0.5rem auto;
+  }
+
+  & > h3 {
+    margin: 2rem auto;
+    font-size: 4vw;
+  }
+
+  &-name {
+    text-shadow: 1px 0 0 $third-color;
+    font: {
+      family: $font-secondary;
+    }
+  }
+
+  &-email {
+    color: rgba($font-color, .8);
+    font: {
+      size: .7em;
+      family: $font-secondary;
+    }
+  }
+
+  &-avatar {
+    border-radius: 50%;
+    border: 1px solid $font-color;
+    max-width: 150px;
+    max-height: 150px;
+  }
+
+  &-your-photos {
+    text-shadow: 1px 0 0 black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: .5em;
+    border-bottom: 1px solid rgba($font-color, .3);
+  }
+
+  &-photos {
+    & img {
+      margin: 1rem auto;
+      padding: .3rem;
+      border: 2px solid $font-color;
+      background: black;
+    }
+  }
+}
+
+.camera {
+  &-photo {
+    padding: .2rem;
+    background: $font-color;
+    border: 1px solid $font-color;
+  }
+
+  &-menu {
+    margin-top: 1.3rem;
+    button{
+      border: 1px solid rgba(white, .3);
+      border-radius: 50%;
+      color: white;
+      font-size: 1em;
+    }
+  }
+}
+
+.timeline {
+  .photo {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: rgba(black, .1);
+    padding: 1em 0;
+
+    &-author {
+      padding: .25rem;
+      width: 100%;
+      order: -1;
+      display: flex;
+      align-items: center;
+
+      &__avatar {
+        margin: 0 .3em 0 0;
+        max-width: 30px;
+        border-radius: 50%;
+        border: 1px solid rgba($third-color, .9);
+      }
+
+      &__name {
+        font: {
+          family: $font-secondary;
+          size: .8em;
+        }
+      }
+    }
+
+    & .icons {
+      font-size: 1em;
+      & i {
+        padding: .3em .3em 0 .1em;
+        color: rgba(black, .7);
+      }
+    }
+  }
+
+
+}
+
+

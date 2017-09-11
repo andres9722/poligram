@@ -1,0 +1,16 @@
+.message {
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  color: $font-color;
+
+  &-success {
+    @extend .message;
+    background-color: $success-color;
+  }
+
+  &-error {
+    @extend .message;
+    background-color: $error-color;
+  }
+}
